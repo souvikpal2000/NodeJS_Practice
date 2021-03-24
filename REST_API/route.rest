@@ -2,7 +2,7 @@ GET http://localhost:3000/subscribers
 
 ###
 
-GET http://localhost:3000/subscribers/12
+GET http://localhost:3000/subscribers/605b10bf8ef4d92c08e48b22
 
 ###
 
@@ -12,4 +12,17 @@ Content-Type: application/json
 {
     "name": "AmazingPerson",
     "subscriberChannel": "NodeJS Channel" 
+}
+
+###
+
+DELETE http://localhost:3000/subscribers/605b21d149a0cf26d4a9ab26
+
+###
+
+PATCH http://localhost:3000/subscribers/605b21d149a0cf26d4a9ab26
+Content-Type: application/json
+
+{
+    "name": "NewName01"
 }
