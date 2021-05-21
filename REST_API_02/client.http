@@ -1,0 +1,33 @@
+POST http://localhost:3000/student
+Content-Type: application/json
+
+{
+    "name": "Souvik Pal", 
+    "email": "spaldmhss@yahoo.com",
+    "phone": 8017137652
+}
+
+###
+
+GET http://localhost:3000/student
+
+###
+
+GET http://localhost:3000/student/6096b7b0db52a53aeef1722e
+
+###
+
+DELETE  http://localhost:3000/student/6096af4cdb52a53aeef1722b
+
+###
+
+PATCH   http://localhost:3000/student/6096b7f5ba24363d083b2351
+Content-Type: application/json
+
+{
+    "email": "souvikpal62588@gmail.com"
+}
+
+###
+
+DELETE  http://localhost:3000/student/
